@@ -7,6 +7,13 @@
     text-decoration: none;
 }
 
+h1{
+    background-color: #001426;
+    color: var(--textColor);
+    text-align: center;
+    border-bottom: solid #03233f;
+}
+
 a,
 a::selection,
 a:focus {
@@ -165,12 +172,9 @@ header {
     background-color: #e9e8e8;
 }
 
-#banner{
+.banner{
     width: 100vw;
     height: 330px;
-    display: flex;
-    scroll-behavior: smooth;
-    overflow: hidden;
     position: relative;
 }
 
@@ -183,13 +187,39 @@ header {
     transform: translate(0,-50%);
     width: 30px;
     font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .descontosBanner{
     width: 100%;
-    flex: none;
+    position: absolute;
+    opacity: 0;
 }
 
 .descontosBanner img{
     width: 100%;
+    height: 100%;
+}
+
+.banner div.selected{
+    height: 100%;
+    opacity: 1;
+    transition: 400ms ease-out;
+}
+
+.contador{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    height: 60px;
+    background-color:#df5201;
+    align-items: center;
+    color: var(--textColor);
+}
+
+.contador div{
+    padding: 0 20px;
 }

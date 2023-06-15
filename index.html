@@ -18,6 +18,9 @@
 </head>
 
 <body>
+    <h1>Inspirado no site <a target="_blank" style="text-decoration: underline;"
+            href="https://www.kabum.com.br/?gclid=CjwKCAjwyqWkBhBMEiwAp2yUFi3m__V1AyWATu0bWiXfVOAyjMayCT-hAkhoFq5-UcmivqpYQ5XZWRoCuhIQAvD_BwE">Kabum!</a>
+    </h1>
     <header>
         <div class="cabecalho">
             <button type="menu" class="btnMenu">
@@ -116,16 +119,16 @@
         </nav>
     </div>
 
-    <section id="banner">
-        <div style="position: absolute; color: red; text-decoration:underline;">
-            *imagens utilizadas do site oficial <a
+    <section class="banner">
+        <div style="position: absolute; color: red; text-decoration:underline; z-index: 1;">
+            *imagens utilizadas do site oficial <a target="_blank"
                 href="https://www.kabum.com.br/?gclid=CjwKCAjwp6CkBhB_EiwAlQVyxZvNSmv5b1o0ZbYxYmcATJLyXvufuFrL_RiTZl4eH4U6ge81JJqGLRoCC2sQAvD_BwE">kabum</a>
         </div>
 
         <button id="leftBtnBanner" class="btnBanner" style="left: 60px;">&lArr;</button>
         <button id="rightBtnBanner" class="btnBanner" style="right: 60px;">&rArr;</button>
 
-        <div class="descontosBanner">
+        <div class="descontosBanner selected">
             <img src="./css/images/bannerimg/banner_img1.webp" alt="headSet desconto">
         </div>
         <div class="descontosBanner">
@@ -139,6 +142,15 @@
         </div>
 
     </section>
+
+    <div class="contador">
+        <div>de ferias com o play</div>
+
+        <div id="timer">
+            termina em : 
+            00d 00:00:00
+        </div>
+    </div>
 
     <script src="./javascript/script.js"></script>
 
