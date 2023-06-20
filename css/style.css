@@ -7,7 +7,7 @@
     text-decoration: none;
 }
 
-h1{
+h1 {
     background-color: #001426;
     color: var(--textColor);
     text-align: center;
@@ -19,7 +19,8 @@ a::selection,
 a:focus {
     color: var(--textColor);
 }
-.login a:hover{
+
+.login a:hover {
     text-decoration: underline;
 }
 
@@ -31,7 +32,7 @@ a:focus {
 header {
     background-color: #001426;
     width: 100%;
-    height: 100px;
+    height: auto;
 }
 
 .cabecalho {
@@ -137,89 +138,57 @@ header {
     padding: 2px;
 }
 
-.pesquisasDirecionadas {
-    background-color: #df5201;
+.atalhosPesquisas {
+    background-color: rgb(218, 97, 12);
     width: 100%;
-    height: 40px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+}
+
+.atalhosPesquisas-limitador {
+    max-width: 1200px;
+    height: 40px;
+    width: 95%;
+}
+
+.atalhoNavegacao {
+    height: 100%;
+    font-size: 13px;
     color: var(--textColor);
-    font-weight: bolder;
     text-transform: uppercase;
-}
-
-.pesquisasDirecionadas a {
-    padding: 0px 10px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   font-size: 15px;
-}
-
-.pesquisasDirecionadas nav {
     display: flex;
+    flex-direction: row;
+    font-weight: bolder;
 }
 
-.pesquisasDirecionadas a:hover {
-    background-color: rgba(0, 0, 0, 0.171);
+.atalhoNavegacao div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 3px;
+    white-space: nowrap;
 }
 
-.separador {
-    width: 0.0789px;
-    height: 34px;
+.divisor{
+    padding: 0 !important;
+    height: 70%;
+    width: 1px !important;
     background-color: #e9e8e8;
+    opacity: 0.2;
+}
+
+.atalhoNavegacao div:hover{
+    background-color: #00142638;
 }
 
 .banner{
-    width: 100vw;
-    height: 330px;
-    position: relative;
-}
-
-.btnBanner{
-    position: absolute;
-    border-radius: 50%;
-    border: solid black 1px;
-    top: 50%;
-    font-weight: bolder;
-    transform: translate(0,-50%);
-    width: 30px;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.descontosBanner{
     width: 100%;
-    position: absolute;
-    opacity: 0;
+    height: 300px;
+    background-color: rgb(5, 114, 114);
 }
 
-.descontosBanner img{
-    width: 100%;
-    height: 100%;
-}
 
-.banner div.selected{
-    height: 100%;
-    opacity: 1;
-    transition: 400ms ease-out;
-}
-
-.contador{
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
-    height: 60px;
-    background-color:#df5201;
-    align-items: center;
-    color: var(--textColor);
-}
-
-.contador div{
-    padding: 0 20px;
-}
