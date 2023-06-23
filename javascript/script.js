@@ -1,31 +1,29 @@
-// const bannerImg = document.querySelectorAll('.descontosBanner');
+const bannerImg = document.querySelectorAll('#imgsBanner img');
+console.log(bannerImg)
 
-// let tempo = 5000;
-// let imagemAtual = 0;
-// let maxImgs = bannerImg.length;
+let tempo = 5000;
+let imagemAtual = 0;
+let maxImgs = bannerImg.length;
 
-// function mudaImg(){
-//     bannerImg[imagemAtual].classList.remove('selected');
-//     imagemAtual++;
+function mudaImg() {
+    bannerImg[imagemAtual].classList.remove('select');
+    imagemAtual++;
 
-//     if(imagemAtual >= maxImgs){
-//         imagemAtual = 0;
-//     }
-//     bannerImg[imagemAtual].classList.add('selected');
+    if (imagemAtual >= maxImgs) {
+        imagemAtual = 0;
+    }
+    bannerImg[imagemAtual].classList.add('select');
 
-// }
+}
 
-// const dataFinal = new Date();
-// console.log(dataFinal)
+function start() {
 
-// function start(){
+    setInterval(() => {
+        mudaImg()
+    }, tempo)
+}
 
-//     setInterval(()=>{
-//         mudaImg()
-//     },tempo)
-// }
-
-// document.addEventListener('load',start());
+document.addEventListener('load', start());
 
 
 
